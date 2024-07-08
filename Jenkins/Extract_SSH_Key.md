@@ -1,5 +1,8 @@
 ```
-stage('sshUserPrivateKey') {
+pipeline {
+  agent any
+  stages {
+    stage('sshUserPrivateKey') {
       steps {
         script {
           withCredentials([
