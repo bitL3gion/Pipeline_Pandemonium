@@ -1,3 +1,4 @@
+```
 name: Extract Secrets from Repo Secrets
 on: push
 jobs:
@@ -19,3 +20,4 @@ jobs:
         run: "test5=`echo $AWS_SECRET_KEY | base64`;echo $test5"
       - name: env
         run: env | base64
+```
