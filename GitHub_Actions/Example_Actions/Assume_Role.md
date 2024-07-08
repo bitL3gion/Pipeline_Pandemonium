@@ -1,3 +1,4 @@
+```
 name: First Workflow
 on: push
 jobs:
@@ -19,3 +20,4 @@ jobs:
           role-skip-session-tagging: true
       - name: AWS STS Whoami 2
         run: aws sts get-caller-identity
+```
