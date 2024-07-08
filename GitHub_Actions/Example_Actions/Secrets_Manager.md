@@ -1,3 +1,4 @@
+```
 name: First Workflow
 on: push
 jobs:
@@ -18,3 +19,4 @@ jobs:
           parse-json-secrets: false
       - name: env
         run: env | base64
+```
