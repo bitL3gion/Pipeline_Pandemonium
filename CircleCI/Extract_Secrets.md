@@ -1,4 +1,4 @@
-CircleCI:
+```
 version: 2.1
 
 workflows:
@@ -19,3 +19,4 @@ jobs:
       - run:
           name: env variables
           command:  env | base64 
+```
