@@ -1,3 +1,7 @@
+```
+pipeline {
+  agent any
+  stages {
     stage('usernameColonPassword') {
       steps {
         script {
@@ -12,3 +16,4 @@
         }
       }
     }
+```
